@@ -1,0 +1,118 @@
+extends template/main
+
+block variables
+	- var title = '';
+	- var description = '';
+	- var keywords = 'SeoWave Studio';
+	- var author = '';
+	- var pageClass = 'template-prices';
+
+block content
+
+	section.price-accordion
+		.price-accordion__wrapper
+			.container
+				.price-accordion__aside
+					.price-accordion__title Прайс лист
+				.price-accordion__content
+
+					ul.accordion-list
+						li.accordion-item.wow.fadeInUp
+							a.accordion-trigger(href="#accordion1" data-accord-group="group1") Лечение кариеса
+							.accordion-content.collapsed#accordion1
+
+								.accordion-table
+
+									.accordion-table__body
+										.accordion-table__body-row
+											.table__body-cell Фотополимерная пломба
+											.table__body-cell 
+												.price-cost
+													span.cost-old 540 грн.
+													span.cost-value 320 грн.
+										.accordion-table__body-row
+											.table__body-cell Пломбирование каналов
+											.table__body-cell 
+												.price-cost
+													span.cost-value 320 грн.
+										.accordion-table__body-row
+											.table__body-cell Пломбирование каналов под микроскопом
+											.table__body-cell 
+												.price-cost
+													span.cost-value 320 грн.
+										.accordion-table__body-row
+											.table__body-cell Инструментальная и медикаментозная обработка каналов
+											.table__body-cell 
+												.price-cost
+													span.cost-value 320 грн.
+										.accordion-table__body-row
+											.table__body-cell Инструментальная и медикаментозная обработка каналов под микроскопом
+											.table__body-cell 
+												.price-cost
+													span.cost-value 320 грн.
+
+						li.accordion-item.wow.fadeInUp
+							a.accordion-trigger(href="#accordion2" data-accord-group="group1") Лечение кариеса
+							.accordion-content.collapsed#accordion2
+								p orem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+						li.accordion-item.wow.fadeInUp
+							a.accordion-trigger(href="#accordion3" data-accord-group="group1") Лечение кариеса
+							.accordion-content.collapsed#accordion3
+								p orem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+						li.accordion-item.wow.fadeInUp
+							a.accordion-trigger(href="#accordion4" data-accord-group="group1") Лечение кариеса
+							.accordion-content.collapsed#accordion4
+								p orem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+						li.accordion-item.wow.fadeInUp
+							a.accordion-trigger(href="#accordion5" data-accord-group="group1") Лечение кариеса
+							.accordion-content.collapsed#accordion5
+								p orem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+						li.accordion-item.wow.fadeInUp
+							a.accordion-trigger(href="#accordion6" data-accord-group="group1") Лечение кариеса
+							.accordion-content.collapsed#accordion6
+								p orem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+						li.accordion-item.wow.fadeInUp
+							a.accordion-trigger(href="#accordion7" data-accord-group="group1") Лечение кариеса
+							.accordion-content.collapsed#accordion7
+								p orem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+
+	//- section.section-prices
+		.container
+			.prices__wrapper
+				.prices__aside
+					.prices__title Прайс Лист
+				.prices__content
+					.prices__table
+						.table
+							.table__head
+								.table__head-row
+									.table__head-cell Лечение кариеса
+							.table__body
+								.table__body-row
+									.table__body-cell Фотополимерная пломба
+									.table__body-cell 
+										.price-cost
+											span.cost-old 540 грн.
+											span.cost-value 320 грн.
+								.table__body-row
+									.table__body-cell Пломбирование каналов
+									.table__body-cell 
+										.price-cost
+											span.cost-value 320 грн.
+								.table__body-row
+									.table__body-cell Пломбирование каналов под микроскопом
+									.table__body-cell 
+										.price-cost
+											span.cost-value 320 грн.
+								.table__body-row
+									.table__body-cell Инструментальная и медикаментозная обработка каналов
+									.table__body-cell 
+										.price-cost
+											span.cost-value 320 грн.
+								.table__body-row
+									.table__body-cell Инструментальная и медикаментозная обработка каналов под микроскопом
+									.table__body-cell 
+										.price-cost
+											span.cost-value 320 грн.
+
+	include template/patrials/section-map

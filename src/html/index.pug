@@ -1,0 +1,288 @@
+extends template/main
+
+block variables
+	- var title = '';
+	- var description = '';
+	- var keywords = 'SeoWave Studio';
+	- var author = '';
+	- var pageClass = 'page-template-index';
+
+block content
+	//- section.home-intro
+		.container
+			.swiper-container(id="home-intro-slider")
+				.swiper-wrapper
+					.swiper-slide
+
+						.home-intro__slide
+							.home-intro__slide-background(style="background-image: url('images/home-intro-bg-image.png');")
+							.home-intro__slide-inner
+								.home-intro__slide-content
+									.home-intro__slide-title Доверте Вашу улыбку профессионалам
+									.home-intro__slide-subtitle и начните чаще улыбаться
+
+									ul.home-intro__slide-list
+
+										li.home-slide__list-item
+											.home-list__item-title Зарубежное качество
+											.home-list__item-description Оборудовния и материалы с Японии, Германии и США
+
+										li.home-slide__list-item
+											.home-list__item-title Зарубежное качество
+											.home-list__item-description Оборудовния и материалы с Японии, Германии и США
+
+										li.home-slide__list-item
+											.home-list__item-title Зарубежное качество
+											.home-list__item-description Оборудовния и материалы с Японии, Германии и США
+
+									button.home-intro__slide-button Записаться на консультацию
+
+					.swiper-slide
+
+						.home-intro__slide
+							.home-intro__slide-background(style="background-image: url('images/home-intro-bg-image.png');")
+							.home-intro__slide-inner
+								.home-intro__slide-content
+									.home-intro__slide-title Доверте Вашу улыбку профессионалам
+									.home-intro__slide-subtitle и начните чаще улыбаться
+
+									ul.home-intro__slide-list
+
+										li.home-slide__list-item
+											.home-list__item-title Зарубежное качество
+											.home-list__item-description Оборудовния и материалы с Японии, Германии и США
+
+										li.home-slide__list-item
+											.home-list__item-title Зарубежное качество
+											.home-list__item-description Оборудовния и материалы с Японии, Германии и США
+
+										li.home-slide__list-item
+											.home-list__item-title Зарубежное качество
+											.home-list__item-description Оборудовния и материалы с Японии, Германии и США
+
+									button.home-intro__slide-button Записаться на консультацию
+
+					.swiper-slide
+
+						.home-intro__slide
+							.home-intro__slide-background(style="background-image: url('images/home-intro-bg-image.png');")
+							.home-intro__slide-inner
+								.home-intro__slide-content
+									.home-intro__slide-title Доверте Вашу улыбку профессионалам
+									.home-intro__slide-subtitle и начните чаще улыбаться
+
+									ul.home-intro__slide-list
+
+										li.home-slide__list-item
+											.home-list__item-title Зарубежное качество
+											.home-list__item-description Оборудовния и материалы с Японии, Германии и США
+
+										li.home-slide__list-item
+											.home-list__item-title Зарубежное качество
+											.home-list__item-description Оборудовния и материалы с Японии, Германии и США
+
+										li.home-slide__list-item
+											.home-list__item-title Зарубежное качество
+											.home-list__item-description Оборудовния и материалы с Японии, Германии и США
+
+									button.home-intro__slide-button Записаться на консультацию
+
+
+	//- section.home-advantages
+		.container
+			.home-advantages__title “5 основных причин обратиться именно к нам”
+			.home-advantages-wrapper
+				.home-advantages-column
+
+					.home-advantages__list
+
+						.home-advantages__item
+							.home-advantages__item-number #01
+							h3.home-advantages__item-title Мы первые в Киеве
+							p.home-advantages__item-text кто в вопросе эстетики перестал ограничиваться только зубами, а стали рассматривать картину в целом (стоматология и косметология)
+						.home-advantages__item
+							.home-advantages__item-number #02
+							h3.home-advantages__item-title ТЕХНОЛОГИЧНО
+							p.home-advantages__item-text Мы используем только лучшее инновационное оборудование на рынке - Dentsply Sirona, уровень TESLA в дентал-индустрии, что дает нам высокую точность и гарантию долголетия.
+						.home-advantages__item
+							.home-advantages__item-number #03
+							h3.home-advantages__item-title БЕЗБОЛЕЗНЕННО
+							p.home-advantages__item-text Современные подходы к лечению позволяют нам сделать так, чтобы Вы, приходя к нам в клинику, забывали что такое страх перед стоматологическими или косметическими услугами.
+						.home-advantages__item
+							.home-advantages__item-number #04
+							h3.home-advantages__item-title КОМФОРТНЫЙ СЕРВИС
+							p.home-advantages__item-text Не навязчивый, а сопровождение доктора-куратора на протяжении всего лечения.
+						.home-advantages__item
+							.home-advantages__item-number #05
+							h3.home-advantages__item-title 100% БЕЗОПАСНОСТЬ
+							p.home-advantages__item-text Все инструменты проходят тщательную пятиступенчатую стерилизацию.
+
+				.home-advantages-column
+
+					.home-advantages__image
+						.home-advantages__placeholder(style="background-image: url('images/home-a1.jpg');")
+							<svg width="280" height="350" viewBox="0 0 280 350" xmlns="http://www.w3.org/2000/svg">
+								<rect x="0" y="0" width="280" height="350" rx="3" ry="3" fill="none"></rect></svg>
+							//- img.home-advantages-image(src="/images/img.jpg" alt="")
+
+
+
+	//- section.home-services
+		.container
+			.services__wrapper
+				.services__content
+					h2.services__title Категегории
+					p В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифто
+				.services__aside
+
+					a.services__item
+						.services__layer
+							svg.services__layer-placeholder(width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg")
+								rect(x="0" y="0" width="150" height="150" rx="3" ry="3" fill="none")
+						.services__overlay
+							.services__content-inner
+								.services__image
+									img.services__icon.icon--vivsible(src="images/icons/services/implant.svg" alt="")
+									img.services__icon.icon--hover(src="images/icons/services/implant-hover.svg" alt="")
+								.services__divider
+								.services__heading Лечение зубов
+
+					a.services__item
+						.services__layer
+							svg.services__layer-placeholder(width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg")
+								rect(x="0" y="0" width="150" height="150" rx="3" ry="3" fill="none")
+						.services__overlay
+							.services__content-inner
+								.services__image
+									img.services__icon.icon--vivsible(src="images/icons/services/dental-care.svg" alt="")
+									img.services__icon.icon--hover(src="images/icons/services/dental-care-hover.svg" alt="")
+								.services__divider
+								.services__heading Протезирование
+
+					a.services__item
+						.services__layer
+							svg.services__layer-placeholder(width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg")
+								rect(x="0" y="0" width="150" height="150" rx="3" ry="3" fill="none")
+						.services__overlay
+							.services__content-inner
+								.services__image
+									img.services__icon.icon--vivsible(src="images/icons/services/vaccine.svg" alt="")
+									img.services__icon.icon--hover(src="images/icons/services/vaccine-hover.svg" alt="")
+								.services__divider
+								.services__heading Хирургия
+
+					a.services__item
+						.services__layer
+							svg.services__layer-placeholder(width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg")
+								rect(x="0" y="0" width="150" height="150" rx="3" ry="3" fill="none")
+						.services__overlay
+							.services__content-inner
+								.services__image
+									img.services__icon.icon--vivsible(src="images/icons/services/anesthesia.svg" alt="")
+									img.services__icon.icon--hover(src="images/icons/services/anesthesia-hover.svg" alt="")
+								.services__divider
+								.services__heading Костная пластика
+
+					a.services__item
+						.services__layer
+							svg.services__layer-placeholder(width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg")
+								rect(x="0" y="0" width="150" height="150" rx="3" ry="3" fill="none")
+						.services__overlay
+							.services__content-inner
+								.services__image
+									img.services__icon.icon--vivsible(src="images/icons/services/dentist.svg" alt="")
+									img.services__icon.icon--hover(src="images/icons/services/dentist-hover.svg" alt="")
+								.services__divider
+								.services__heading Исправление прикуса
+
+					a.services__item
+						.services__layer
+							svg.services__layer-placeholder(width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg")
+								rect(x="0" y="0" width="150" height="150" rx="3" ry="3" fill="none")
+						.services__overlay
+							.services__content-inner
+								.services__image
+									img.services__icon.icon--vivsible(src="images/icons/services/caries.svg" alt="")
+									img.services__icon.icon--hover(src="images/icons/services/caries-hover.svg" alt="")
+								.services__divider
+								.services__heading Пломбирование
+
+
+	//- section.home-info
+		.container
+			.home-info__wrapper
+				h2 Strategy.
+				.home-info__image
+					img.home-info__image-item(src="/images/homepage-strategy.jpg" alt="")
+				.home-info__content
+					.home-info__heading We make sense of systems, technology and people to create plans that drive business objectives and long term success.
+
+					.home-info__text Of course we got the goods. But it’s your business. To us, the product is you. And we aim to build the best damn version of it. Our strategic discovery and sketch process divines the intersection of company tech and people, setting a roadmap that connects objectives to lasting success.
+
+
+	//- section.home-gallery
+
+		.container
+
+			.home-gallery__wrapper
+
+				.home-gallery__slider
+
+					.swiper-container(id="home-gallery-slider")
+						.swiper-wrapper
+							.swiper-slide
+								.home-gallery__image(style="background-image: url('images/homepage-clients-second.png');")
+									svg.home-gallery__placeholder(width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg")
+										rect(x="0" y="0" width="800" height="800" rx="0" ry="0" fill="none")
+							.swiper-slide
+								.home-gallery__image(style="background-image: url('images/homepage-clients-second.png');")
+									svg.home-gallery__placeholder(width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg")
+										rect(x="0" y="0" width="800" height="800" rx="0" ry="0" fill="none")
+							.swiper-slide
+								.home-gallery__image(style="background-image: url('images/about-us.jpg');")
+									svg.home-gallery__placeholder(width="800" height="800" viewBox="0 0 800 800" xmlns="http://www.w3.org/2000/svg")
+										rect(x="0" y="0" width="800" height="800" rx="0" ry="0" fill="none")
+
+				.home-gallery__article
+
+					.home-gallery__article-inner
+						span.small Видео и
+						h3 Галлерея
+						p Capitalize on our exposure to all the software, technology, emerging platforms and class- leading tools available to master your digital initiative. <u>Bring your website alive</u>
+
+					.home-gallery__slider-navigation
+
+						.swiper-pagination(id="home-gallery-slider-pagination")
+
+						.swiper-button-prev(id="home-gallery-slider-button-prev")
+							<svg width="32" height="8" viewBox="0 0 32 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M31.3536 4.35355C31.5488 4.15829 31.5488 3.84171 31.3536 3.64645L28.1716 0.464466C27.9763 0.269204 27.6597 0.269204 27.4645 0.464466C27.2692 0.659728 27.2692 0.976311 27.4645 1.17157L30.2929 4L27.4645 6.82843C27.2692 7.02369 27.2692 7.34027 27.4645 7.53553C27.6597 7.7308 27.9763 7.7308 28.1716 7.53553L31.3536 4.35355ZM0 4.5H31V3.5H0V4.5Z" fill="black"/>
+							</svg>
+						.swiper-button-next(id="home-gallery-slider-button-next")
+							<svg width="32" height="8" viewBox="0 0 32 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M31.3536 4.35355C31.5488 4.15829 31.5488 3.84171 31.3536 3.64645L28.1716 0.464466C27.9763 0.269204 27.6597 0.269204 27.4645 0.464466C27.2692 0.659728 27.2692 0.976311 27.4645 1.17157L30.2929 4L27.4645 6.82843C27.2692 7.02369 27.2692 7.34027 27.4645 7.53553C27.6597 7.7308 27.9763 7.7308 28.1716 7.53553L31.3536 4.35355ZM0 4.5H31V3.5H0V4.5Z" fill="black"/>
+							</svg>
+
+
+	section.home-blog
+		.container
+			.home-blog__list
+
+				mixin blog-card()
+					.home-blog__card
+						.home-blog__card-inner
+							a.home-blog__card-link(href="#")
+								.home-blog__card-image(style="background-image: url('images/2-1-1-456x553.jpg')")
+									<svg class="home-blog__card-placeholder" width="456" height="553" viewBox="0 0 456 553" xmlns="http://www.w3.org/2000/svg">
+										<rect x="0" y="0" width="456" height="553" rx="3" ry="3" fill="none"></rect></svg>
+									//- img(src="/images/" alt="")
+								.home-blog__card-info
+									.home-blog__card-date 10.01.2020
+									.home-blog__card-title Эксклюзивные аппаратные методики омоложения Guinot (Франция)
+
+				+blog-card()
+				+blog-card()
+				+blog-card()
+				//- +blog-card()
+
+	include template/patrials/section-map

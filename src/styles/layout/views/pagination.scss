@@ -1,0 +1,47 @@
+.navigation.pagination {
+
+	.nav-links {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.page-numbers {
+		width: 20px;
+		height: 20px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 13px;
+		line-height: 15px;
+		color: #132324;
+		margin: 5px 8px;
+		cursor: pointer;
+
+		&:hover {
+			color: #1BD0E0;
+
+			&.current {
+				color: #132324;
+			}
+
+			svg path {
+				stroke: #132324;
+			}
+		}
+
+		&.next {  }
+
+		&.prev {  }
+
+		&.dots {  }
+
+		&.meta-nav {  }
+
+		&.current {
+			font-weight: 900;
+		}
+	}
+}

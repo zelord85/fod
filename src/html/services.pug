@@ -1,0 +1,407 @@
+extends template/main
+
+block variables
+	- var title = '';secvices-intro
+	- var description = '';
+	- var keywords = 'SeoWave Studio';
+	- var author = '';
+	- var pageClass = 'template-services';
+
+block content
+
+	section.section-secvices
+		.container
+			.secvices-intro__inner
+				.secvices-intro__figure
+					img.secvices-intro__image(src="images/secvices-intro.png" alt="")
+					.secvices-intro__figcaption
+						p создал большую коллекцию размеров и форм шрифтов
+
+				.secvices-intro__content
+
+					.secvices-section-bg__grid
+						.secvices-section-bg__column
+						.secvices-section-bg__column
+						.secvices-section-bg__column
+						.secvices-section-bg__column
+
+					.secvices-intro__info
+						.secvices-intro__info-headings
+							h2.secvices-intro__info-title
+								span Сделайте первый шаг к идеальной улыбке
+								span.secvices-section-bg__dot
+								span.secvices-section-bg__dot
+								span.secvices-section-bg__dot
+								span.secvices-section-bg__dot
+								span.secvices-section-bg__dot
+								span.secvices-section-bg__dot
+								span.secvices-section-bg__dot
+								span.secvices-section-bg__dot
+								span.secvices-section-bg__dot
+								span.secvices-section-bg__dot
+							p.secvices-intro__info-text Если вас беспокоят:
+
+						.secvices-intro__info-grid
+							.secvices-intro__info-row
+								.secvices-intro__info-column
+									.secvices-intro__box-item.with-text
+										p Неправильный прикус
+								.secvices-intro__info-column
+									.secvices-intro__box-item.with-text
+										p Неправильное положение зубов
+								.secvices-intro__info-column
+									.secvices-intro__box-item.with-text
+										p Если нервные зубы
+								.secvices-intro__info-column
+									.secvices-intro__box-item
+										p
+							.secvices-intro__info-row
+								.secvices-intro__info-column
+									.secvices-intro__box-item.with-text
+										p Неправильный прикус
+								.secvices-intro__info-column
+									.secvices-intro__box-item.with-text
+										p Неправильное положение зубов
+								.secvices-intro__info-column
+									.secvices-intro__box-item.with-text
+										p Если нервные зубы
+								.secvices-intro__info-column
+									.secvices-intro__box-item
+										p
+
+
+	section.section-compare
+		.container
+			.compare__inner
+				.compare__aside
+					h2.compare__title Реультат установки Виниров
+				.compare__content
+					.compare(id="compare")
+							.compare-item
+								.js-img-compare
+									div(style="display: none;")
+										//- <span class="images-compare-label">Before</span>
+										img(src="images/vinirs-d1.jpg" alt="Before")
+									div
+										//- <span class="images-compare-label">After</span>
+										img(src="images/veneers-p1.jpg" alt="After")
+							.compare-item
+								.js-img-compare
+									div(style="display: none;")
+										img(src="images/vinirs-d1.jpg" alt="Before")
+									div
+										img(src="images/veneers-p1.jpg" alt="After")
+							.compare-item
+								.js-img-compare
+									div(style="display: none;")
+										img(src="images/vinirs-d1.jpg" alt="Before")
+									div
+										img(src="images/veneers-p1.jpg" alt="After")
+							.compare-item
+								.js-img-compare
+									div(style="display: none;")
+										img(src="images/vinirs-d1.jpg" alt="Before")
+									div
+										img(src="images/veneers-p1.jpg" alt="After")
+
+				.compare-section-bg__grid
+					.compare-section-bg__column
+					.compare-section-bg__column
+					.compare-section-bg__column
+					.compare-section-bg__column
+
+	section.section-video
+		.container
+			.video__wrapper
+				.video__content
+					a.video__link(href="#myVideo" data-fancybox="html5-video")
+						img.video__link-poster(
+							src="images/video-large.png"
+							data-src="images/video-large.png"
+							data-src-small="images/video-large.png"
+							alt="")
+						include layout/svg/video-icon
+					video.fancybox-video#myVideo(style="display: none;" controls)
+								//- (poster="images/poster.png" style="display: none;" controls)
+								<source src="images/Ed-500.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+								<source src="images/Ed-500.ogg" type='video/ogg; codecs="theora, vorbis"'>
+								<source src="images/Ed-500.webm" type='video/webm; codecs="vp8, vorbis"'>
+				.video__aside
+					.video__title <span class="title-large">Хотите идеальную улыбку,</span> но стесняетесь носить брекеты?
+					.video__text Елайнеры - прозрачная алтернатива брекетам
+					.video__block-list
+						.video__block-item
+							.video__block-title До 50% быстрее
+							.video__block-text Лечение быстрее по сравнению с другими способами
+						.video__block-item
+							.video__block-title Прозрачные и не заметные
+							.video__block-text Не привлекают внимание окружающих
+						.video__block-item
+							.video__block-title Удобные в использовании
+							.video__block-text Не мешают лечить и чистить зубы
+
+
+	section.section-specialist
+		.container
+			.specialist__wrapper
+				.specialist__image
+					img(src="images/doctor.png")
+				.specialist__info
+					.specialist__info-heading
+						h2.specialist__section-title Ваш лечащий врач
+						.specialist__info-heading-bg__grid
+							.specialist__info-heading-bg__column
+								span.specialist__info-heading-bg__dot
+								span.specialist__info-heading-bg__dot
+							.specialist__info-heading-bg__column
+								span.specialist__info-heading-bg__dot
+							.specialist__info-heading-bg__column
+								span.specialist__info-heading-bg__dot
+							.specialist__info-heading-bg__column
+								span.specialist__info-heading-bg__dot
+					.specialist__info-content
+
+						.specialist__info-content-bg__grid
+							.specialist__info-content-bg__column
+							.specialist__info-content-bg__column
+							.specialist__info-content-bg__column
+							.specialist__info-content-bg__column
+						.specialist__info-content-bg__dots
+								.specialist__info-content-bg__dots-row
+									.specialist__info-content-bg__dot
+									.specialist__info-content-bg__dot
+									.specialist__info-content-bg__dot
+									.specialist__info-content-bg__dot
+									.specialist__info-content-bg__dot
+								.specialist__info-content-bg__dots-row
+									.specialist__info-content-bg__dot
+									.specialist__info-content-bg__dot
+									.specialist__info-content-bg__dot
+									.specialist__info-content-bg__dot
+									.specialist__info-content-bg__dot
+
+						.specialist__info-description
+							p Является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов
+
+						.specialist__info-title Левицкий Дмитрий Сергеевич
+
+						.specialist__info-facts
+							.specialist__info-fact-item
+								.specialist__info-fact-value 25
+								.specialist__info-fact-description Лет успешной практики
+							.specialist__info-fact-item
+								.specialist__info-fact-value 150
+								.specialist__info-fact-description Призов и номинаций
+							.specialist__info-fact-item
+								.specialist__info-fact-value 700
+								.specialist__info-fact-description Довольных пациентов
+							.specialist__info-fact-item
+								.specialist__info-fact-value 1000+
+								.specialist__info-fact-description Довольных пациентов
+
+							.specialist__info-fact-bg__grid
+								.specialist__info-fact-bg__column
+									.specialist__info-fact-bg__dot
+									.specialist__info-fact-bg__dot
+								.specialist__info-fact-bg__column
+									.specialist__info-fact-bg__dot
+								.specialist__info-fact-bg__column
+									.specialist__info-fact-bg__dot
+								.specialist__info-fact-bg__column
+									.specialist__info-fact-bg__dot
+
+
+	section.section-accordion
+		.container
+			.accordion__wrapper
+				.accordion__aside
+					.accordion__title Вопросы ответы
+				.accordion__content
+
+					ul.accordion-list
+						li.accordion-item.wow.fadeInUp
+							a.accordion-trigger(href="#accordion1" data-accord-group="group1") В то время некий безымянный печатник создал большую коллекцию
+							.accordion-content.collapsed#accordion1
+								p orem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+						li.accordion-item.wow.fadeInUp
+							a.accordion-trigger(href="#accordion2" data-accord-group="group1") В то время некий безымянный печатник создал большую коллекцию
+							.accordion-content.collapsed#accordion2
+								p orem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+						li.accordion-item.wow.fadeInUp
+							a.accordion-trigger(href="#accordion3" data-accord-group="group1") В то время некий безымянный печатник создал большую коллекцию
+							.accordion-content.collapsed#accordion3
+								p orem Ipsum является стандартной "рыбой" для текстов на латинице с начала XVI века. В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифтов, используя Lorem Ipsum для распечатки образцов. Lorem Ipsum не только успешно пережил без заметных изменений пять веков, но и перешагнул в электронный дизайн.
+
+	section.section-testimonials
+		.testimonials__wrapper
+			.testimonials__header
+				.container
+					.testimonials__headings
+						.testimonials__title Что говорят наши клиенты
+						.testimonials__text В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифто
+			.testimonials__body
+				.testimonials__navigation
+					.container
+						.swiper-button-prev(id="testimonials-carousel-button-prev")
+							<svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M11 1L2 9L11 17" stroke="white" stroke-width="2"/>
+							</svg>
+						.swiper-button-next(id="testimonials-carousel-button-next")
+							<svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+								<path d="M1 17L10 9L0.999999 1" stroke="white" stroke-width="2"/>
+							</svg>
+				.testimonials__slider(id="testimonials-carousel")
+
+					mixin testimonials-video()
+						.testimonials__video
+							a.testimonials__video-link(href="#myVideo" data-fancybox="html5-video")
+								//- srcset="images/poster-576w.png 320w, images/poster-990w.png 480w"
+								//- sizes="(max-width: 576px) 280px, (max-width: 990px) 440px, 100%"
+								//-	data-src-medium="images/poster-990w.png"
+								img.testimonials__video-poster(
+									src="images/video.png"
+									data-src="images/video.png"
+									data-src-small="images/video.png"
+									alt="")
+								include layout/svg/video-icon
+							video.fancybox-video#myVideo(style="display: none;" controls)
+								//- (poster="images/poster.png" style="display: none;" controls)
+								<source src="images/Ed-500.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"'>
+								<source src="images/Ed-500.ogg" type='video/ogg; codecs="theora, vorbis"'>
+								<source src="images/Ed-500.webm" type='video/webm; codecs="vp8, vorbis"'>
+
+					.swiper-container
+						.swiper-wrapper
+							.swiper-slide
+								+testimonials-video()
+							.swiper-slide
+								+testimonials-video()
+							.swiper-slide
+								+testimonials-video()
+							.swiper-slide
+								+testimonials-video()
+							.swiper-slide
+								+testimonials-video()
+							.swiper-slide
+								+testimonials-video()
+
+
+	section.section-prices
+		.container
+			.prices__wrapper
+				.prices__aside
+					.prices__title Прайс Лист
+				.prices__content
+					.prices__table
+						.table
+							.table__head
+								.table__head-row
+									.table__head-cell Лечение кариеса
+							.table__body
+								.table__body-row
+									.table__body-cell Фотополимерная пломба
+									.table__body-cell 
+										.price-cost
+											span.cost-old 540 грн.
+											span.cost-value 320 грн.
+								.table__body-row
+									.table__body-cell Пломбирование каналов
+									.table__body-cell 
+										.price-cost
+											span.cost-value 320 грн.
+								.table__body-row
+									.table__body-cell Пломбирование каналов под микроскопом
+									.table__body-cell 
+										.price-cost
+											span.cost-value 320 грн.
+								.table__body-row
+									.table__body-cell Инструментальная и медикаментозная обработка каналов
+									.table__body-cell 
+										.price-cost
+											span.cost-value 320 грн.
+								.table__body-row
+									.table__body-cell Инструментальная и медикаментозная обработка каналов под микроскопом
+									.table__body-cell 
+										.price-cost
+											span.cost-value 320 грн.
+	section.section-services
+		.container
+			.services__wrapper
+				.services__content
+					h2.services__title Услуги
+					p В то время некий безымянный печатник создал большую коллекцию размеров и форм шрифто
+				.services__aside
+
+					a.services__item
+						.services__layer
+							svg.services__layer-placeholder(width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg")
+								rect(x="0" y="0" width="150" height="150" rx="3" ry="3" fill="none")
+						.services__overlay
+							.services__content-inner
+								.services__image
+									img.services__icon.icon--vivsible(src="images/icons/services/implant.svg" alt="")
+									img.services__icon.icon--hover(src="images/icons/services/implant-hover.svg" alt="")
+								.services__divider
+								.services__heading Лечение зубов
+
+					a.services__item
+						.services__layer
+							svg.services__layer-placeholder(width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg")
+								rect(x="0" y="0" width="150" height="150" rx="3" ry="3" fill="none")
+						.services__overlay
+							.services__content-inner
+								.services__image
+									img.services__icon.icon--vivsible(src="images/icons/services/dental-care.svg" alt="")
+									img.services__icon.icon--hover(src="images/icons/services/dental-care-hover.svg" alt="")
+								.services__divider
+								.services__heading Протезирование
+
+					a.services__item
+						.services__layer
+							svg.services__layer-placeholder(width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg")
+								rect(x="0" y="0" width="150" height="150" rx="3" ry="3" fill="none")
+						.services__overlay
+							.services__content-inner
+								.services__image
+									img.services__icon.icon--vivsible(src="images/icons/services/vaccine.svg" alt="")
+									img.services__icon.icon--hover(src="images/icons/services/vaccine-hover.svg" alt="")
+								.services__divider
+								.services__heading Хирургия
+
+					a.services__item
+						.services__layer
+							svg.services__layer-placeholder(width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg")
+								rect(x="0" y="0" width="150" height="150" rx="3" ry="3" fill="none")
+						.services__overlay
+							.services__content-inner
+								.services__image
+									img.services__icon.icon--vivsible(src="images/icons/services/anesthesia.svg" alt="")
+									img.services__icon.icon--hover(src="images/icons/services/anesthesia-hover.svg" alt="")
+								.services__divider
+								.services__heading Костная пластика
+
+					a.services__item
+						.services__layer
+							svg.services__layer-placeholder(width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg")
+								rect(x="0" y="0" width="150" height="150" rx="3" ry="3" fill="none")
+						.services__overlay
+							.services__content-inner
+								.services__image
+									img.services__icon.icon--vivsible(src="images/icons/services/dentist.svg" alt="")
+									img.services__icon.icon--hover(src="images/icons/services/dentist-hover.svg" alt="")
+								.services__divider
+								.services__heading Исправление прикуса
+
+					a.services__item
+						.services__layer
+							svg.services__layer-placeholder(width="150" height="150" viewBox="0 0 150 150" xmlns="http://www.w3.org/2000/svg")
+								rect(x="0" y="0" width="150" height="150" rx="3" ry="3" fill="none")
+						.services__overlay
+							.services__content-inner
+								.services__image
+									img.services__icon.icon--vivsible(src="images/icons/services/caries.svg" alt="")
+									img.services__icon.icon--hover(src="images/icons/services/caries-hover.svg" alt="")
+								.services__divider
+								.services__heading Пломбирование
+
+	include template/patrials/section-map

@@ -1,0 +1,140 @@
+extends template/main
+
+block variables
+	- var title = '';
+	- var description = '';
+	- var keywords = 'SeoWave Studio';
+	- var author = '';
+	- var pageClass = 'page-template-about';
+
+block content
+
+	section.section-about-us
+		.container
+			.about-us__wrapper
+				.about__image
+					.about__image-layer(style="background-image: url('images/about-us.jpg');")
+						<svg class="about__placeholder" width="1313" height="656" viewBox="0 0 1313 656" xmlns="http://www.w3.org/2000/svg">
+							<rect x="0" y="0" width="1313" height="656" rx="0" ry="0" fill="none"></rect></svg>
+				.about__article
+					h2.about__article-title О компании
+					p.about__article-exerpt Innovo Dental & Face care clinic – частная стоматологическая клиника . Главной гордостью которой являются люди, делающие красивыми не только улыбки, но и лица. Профессионалы, для которых качество и эстетика одинаково важны.
+				.about__main-directions
+					.main-directions__title ОСНОВНЫЕ НАПРАВЛЕНИЯ
+					.main-directions__inner
+						.main-directions__content За эстетику лица в нашей клинике отвечает косметолог-дерматолог. Его главное оружие против несовершенств — нехирургическая коррекция контура лица, формы носа и губ. А преждевременные признаки старения в Innovo Dental & Face care clinic побеждаем инъекциями молодости.
+						.main-directions__content Каждый день наши врачи исправляют положение, форму, размер зубов не только ортодонтическим лечением, но и керамическими реставрациями (виниры, коронки, вкладки), дентальной имплантацией и всеми подготовительными процедурами.
+				.about__additional-info
+					.additional-info__header
+						.additional-info__title Результат
+						.additional-info__text Работы, которыми гордимся мы и более 5000 наших пациентов.
+					.additional-info__body
+						.additional-info__title.title--decor Наша формула успеха
+						.additional-info__text Мы любим то, что делаем. Ведь меняем не только улыбку, а самовосприятие пациента. Внутренние изменения — то, ради чего каждый день ходим на работу, что мотивирует работать по выходным и в праздники.
+						.additional-info__text Наш успех — реакция пациента на новую улыбку или черты лица. Наше «топливо» — счастливые возгласы, слезы радости и искренняя благодарность.
+
+
+	//- section.section-about
+		.container
+			<div class="about-wrapper">
+				<div class="about-item">
+					<div class="about-inner">
+						<div class="about-content">
+							<h2 class="about-heading">О Компании</h2>
+							<p><strong>Innovo Dental &amp; Face care clinic </strong>– частная стоматологическая клиника . Главной гордостью которой являются люди, делающие красивыми не только улыбки, но и лица. Профессионалы, для которых качество и эстетика одинаково важны.</p>
+							<h2 class="about-heading">Основные направления</h2>
+							<p>Каждый день наши врачи исправляют положение, форму, размер зубов не только ортодонтическим лечением, но и керамическими реставрациями (виниры, коронки, вкладки), дентальной имплантацией и всеми подготовительными процедурами.</p>
+							<p>За эстетику лица в нашей клинике отвечает косметолог-дерматолог. Его главное оружие против несовершенств — нехирургическая коррекция контура лица, формы носа и губ. А преждевременные признаки старения в <strong>Innovo Dental &amp; Face care clinic </strong>побеждаем инъекциями молодости.</p>
+						</div>
+					</div>
+				</div>
+				<div class="about-image">
+					<img src="https://innovoclinic.com/wp-content/uploads/2018/01/about.jpg" alt="">
+				</div>
+				<div class="about-item">
+					<div class="about-inner">
+						<div class="about-content">
+							<h2 class="about-heading">Наша формула успеха</h2>
+							<p>Мы любим то, что делаем. Ведь меняем не только улыбку, а самовосприятие пациента. Внутренние изменения — то, ради чего каждый день ходим на работу, что мотивирует работать по выходным и в праздники.</p>
+							<p>Наш успех — реакция пациента на новую улыбку или черты лица. Наше «топливо» — счастливые возгласы, слезы радости и искренняя благодарность.</p>
+						</div>
+						<div class="about-content">
+							<h2 class="about-heading">Результат</h2>
+							<p>Работы, которыми гордимся мы и более 5000 наших пациентов.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	section.section-certificates
+		.container
+			.certificates
+				.certificates__wrapper
+
+					.certificates__slider
+
+						.swiper-container(id="certificates-slider")
+							.swiper-wrapper
+								.swiper-slide
+									.certificates__image(style="background-image: url('images/homepage-clients-second.png');")
+										svg.certificates__placeholder(width="800" height="977" viewBox="0 0 800 977" xmlns="http://www.w3.org/2000/svg")
+											rect(x="0" y="0" width="800" height="977" rx="0" ry="0" fill="none")
+								.swiper-slide
+									.certificates__image(style="background-image: url('images/homepage-clients-second.png');")
+										svg.certificates__placeholder(width="800" height="977" viewBox="0 0 800 977" xmlns="http://www.w3.org/2000/svg")
+											rect(x="0" y="0" width="800" height="977" rx="0" ry="0" fill="none")
+								.swiper-slide
+									.certificates__image(style="background-image: url('images/about-us.jpg');")
+										svg.certificates__placeholder(width="800" height="977" viewBox="0 0 800 977" xmlns="http://www.w3.org/2000/svg")
+											rect(x="0" y="0" width="800" height="977" rx="0" ry="0" fill="none")
+
+					.certificates__article
+
+						.certificates-article__inner
+							span.small Линцензии и
+							h3 Сертификаты
+							p Capitalize on our exposure to all the software, technology, emerging platforms and class- leading tools available to master your digital initiative. <u>Bring your website alive</u>
+
+						.certificates__slider-navigation
+
+							.swiper-pagination(id="certificates-slider-pagination")
+
+							.swiper-button-prev(id="certificates-slider-button-prev")
+								<svg width="32" height="8" viewBox="0 0 32 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M31.3536 4.35355C31.5488 4.15829 31.5488 3.84171 31.3536 3.64645L28.1716 0.464466C27.9763 0.269204 27.6597 0.269204 27.4645 0.464466C27.2692 0.659728 27.2692 0.976311 27.4645 1.17157L30.2929 4L27.4645 6.82843C27.2692 7.02369 27.2692 7.34027 27.4645 7.53553C27.6597 7.7308 27.9763 7.7308 28.1716 7.53553L31.3536 4.35355ZM0 4.5H31V3.5H0V4.5Z" fill="black"/>
+								</svg>
+							.swiper-button-next(id="certificates-slider-button-next")
+								<svg width="32" height="8" viewBox="0 0 32 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+									<path d="M31.3536 4.35355C31.5488 4.15829 31.5488 3.84171 31.3536 3.64645L28.1716 0.464466C27.9763 0.269204 27.6597 0.269204 27.4645 0.464466C27.2692 0.659728 27.2692 0.976311 27.4645 1.17157L30.2929 4L27.4645 6.82843C27.2692 7.02369 27.2692 7.34027 27.4645 7.53553C27.6597 7.7308 27.9763 7.7308 28.1716 7.53553L31.3536 4.35355ZM0 4.5H31V3.5H0V4.5Z" fill="black"/>
+								</svg>
+
+
+	section.section-team
+		.section-team__header
+			.container
+				h2.team__title Команда
+		.section-team__body
+			.container
+				.team-list
+
+					mixin team-card()
+						article.team-card
+							.team-card__inner
+								.team-card__avatar
+									img.team-card__image(src="images/homepage-technology.jpg")
+									a.team-card__link read more
+								.team-card__content
+									h3.team-card__title It ain’t witchcraft. But we’re tech wizards.
+
+									.team-card__desc
+										p Passion is the heart of our craft, technology its living soul. Take advantage of our exposure to, and intimate knowledge of, the world’s leading technologies—across all platforms.
+
+					+team-card()
+					+team-card()
+					+team-card()
+					+team-card()
+					+team-card()
+					+team-card()
+
+
+	include template/patrials/section-map

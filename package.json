@@ -1,0 +1,36 @@
+{
+  "name": "Tad",
+  "version": "1.0.0",
+  "description": "project template",
+  "main": "index.js",
+  "scripts": {
+    "test": "scss-lint src/components/* --config lint.yml"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/zelord85/tad.git"
+  },
+  "author": {
+    "name": "Andrienko Serhii | Laconic Design",
+    "url": "https://laconic-design.com/"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean": "^0.4.0",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^3.1.0",
+    "gulp-debug": "^4.0.0",
+    "gulp-group-css-media-queries": "^1.2.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-plumber": "^1.2.1",
+    "gulp-pug": "^4.0.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^4.1.0",
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-uglify": "^3.0.2"
+  },
+  "dependencies": {}
+}

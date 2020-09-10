@@ -1,0 +1,108 @@
+/* -------------------------------------------------------------------------- 
+ * >>> TABLE OF UTILS : 
+ * -------------------------------------------------------------------------- */
+
+/* Utils */
+/* -------------------------------------------------------------------------- */
+@import 'utils/variables';
+@import 'utils/functions';
+@import 'utils/mixins';
+@import 'utils/media-queries';
+@import 'utils/fonts';
+@import 'utils/reset';
+
+/* Layout */
+/* -------------------------------------------------------------------------- */
+@import 'layout/site-header';
+@import 'layout/site-footer';
+
+/* Components */
+/* -------------------------------------------------------------------------- */
+@import '../libraries/fancybox-3.5.7/jquery.fancybox.css';
+@import 'components/swiper_5.3.8/swiper';
+
+
+/* Views */
+/* -------------------------------------------------------------------------- */
+@import 'layout/views/pagination';
+
+/* Sections  */
+/* -------------------------------------------------------------------------- */
+@import 'sections/section-prices';
+@import 'sections/section-map';
+
+/* Pages */
+/* -------------------------------------------------------------------------- */
+@import 'pages/page-index';
+@import 'pages/page-blog';
+@import 'pages/page-about';
+@import 'pages/page-services';
+@import 'pages/page-contacts';
+@import 'pages/page-prices';
+/* @import 'pages/page-portfolio'; */
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  // display: flex;
+  // flex-wrap: wrap;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  overflow-x: hidden;
+}
+
+.b-lazy {
+  -webkit-transition: opacity 500ms ease-in-out;
+  -moz-transition: opacity 500ms ease-in-out;
+  -o-transition: opacity 500ms ease-in-out;
+  transition: opacity 500ms ease-in-out;
+  max-width: 100%;
+  opacity: 0;
+}
+
+.b-lazy.b-loaded {
+  opacity: 1;
+}
+
+.screen-reader-text {
+  border: 0;
+  clip: rect(1px, 1px, 1px, 1px);
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
+  word-wrap: normal;
+  word-break: normal;
+}
+
+h1 {
+  font-weight: bold;
+  font-style: 400;
+}
+
+a {
+  * {
+    cursor: pointer;
+  }
+}
+
+.site-content {
+  width: 100%;
+  flex: 2 0 auto;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  margin: auto;
+}
+

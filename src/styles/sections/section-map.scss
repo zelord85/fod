@@ -1,0 +1,152 @@
+.section-map {
+	padding-bottom: 35px;
+	background-color: #000000;
+	position: relative;
+
+	@include sm-up {
+		height: 547px;
+		padding-top: 70px;
+		padding-bottom: 70px;
+	}
+}
+
+.map__item {
+	width: 100%;
+	height: 400px;
+
+	@include sm-up {
+		height: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		z-index: 1;
+	}
+
+	iframe {
+		display: block;
+		width: 100%;
+		height: 100%;
+	}
+}
+
+.map__info {
+	height: 100%;
+	position: relative;
+	z-index: 10;
+
+	.container {
+		height: 100%;
+	}
+}
+
+.map__info-inner {
+	width: 100%;
+	padding: 30px 20px;
+	background: linear-gradient(180deg, #272727 0%, #373737 100%);
+
+
+	@include sm-up {
+		width: 370px;
+		height: 100%;
+		padding: 30px 40px;
+		margin-left: 20px;
+	}
+
+	@include hd-up {
+		margin-left: 190px;
+	}
+}
+
+.map__info-title {
+	font-style: normal;
+	font-weight: 900;
+	font-size: 36px;
+	line-height: 45px;
+	color: #FFFFFF;
+	margin-bottom: 45px;
+}
+
+.map__info-item {
+	margin-bottom: 25px;
+	position: relative;
+	display: flex;	
+
+	@include sm-up {
+		margin-bottom: 35px;
+	}
+
+	&:last-child {
+		margin-bottom: 0;
+	}
+}
+
+.map__info-contact {
+	display: block;
+	font-style: normal;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 18px;
+	color: #FFFFFF;
+}
+
+a.map__info-contact {
+	cursor: pointer;
+
+	&:hover {
+		color: $theme-color; 
+	}
+}
+
+.map__info-icon {
+	margin-right: 18px;
+}
+
+.map__info-button-group {
+	width: 100%;
+	max-width: 280px;
+	display: flex;
+	justify-content: space-between;
+
+	@include sm-up {
+		width: 357px;
+		max-width: initial;
+	}
+}
+
+.map__info-button {
+	width: 135px;
+	height: 40px;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14.5px;
+	line-height: 17px;
+	color: #FFFFFF;
+	margin-top: 20px;
+	background-color: transparent;
+
+	@include sm-up {
+		width: 161px;
+		height: 52px;
+		margin-top: 40px;
+	}
+
+	&.button--primary {
+		border: 1px solid #272727;
+		background-color: #272727;
+
+		&:hover {
+			border: 1px solid #ffffff;
+			background-color: #373737;
+		}
+	}
+
+	&.button--outline {
+		border: 1px solid #FFFFFF;
+		background-color: transparent;
+
+		&:hover {
+			border: 1px solid #272727;
+			background-color: #272727;
+		}
+	}
+}

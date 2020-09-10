@@ -1,0 +1,180 @@
+.section-prices {
+  padding-bottom: 50px;
+
+  @include md-up {
+    padding-bottom: 95px;
+  }
+}
+
+
+.prices__wrapper {
+
+  @include md-up {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.prices__aside {
+  width: 100%;
+  padding-top: 20px;
+  padding-right: 30px;
+
+  @include md-up {
+    width: 32%;
+    padding-top: 55px;
+  }
+}
+
+.prices__title {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 45px;
+  color: #132324;
+  padding-bottom: 27px;
+  padding-left: 60px;
+  margin-bottom: 30px;
+
+  position: relative;
+
+  @include md-up {
+    margin-bottom: 58px;
+  }
+
+  &:after {
+    width: 156px;
+    height: 2px;
+    display: block;
+    content: "";
+    background-color: #1BD0E0;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+  }
+}
+
+.prices__content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 20px;
+
+  @include md-up {
+    width: 68%; // or 980px;
+    padding: 0;
+  }
+}
+
+.prices__table {
+  width: 100%;
+  max-width: 867px;
+  padding-top: 40px;
+}
+
+.table {  }
+
+.table__head {  }
+
+.table__head-row {
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.table__head-cell {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px; /* identical to box height, or 111% */
+  color: #132324;
+  padding: 36px 10px 36px;
+  box-sizing: border-box;
+}
+
+.table__body {
+  width: 100%;
+  display: table;
+  padding-top: 10px;
+}
+
+.table__body-row {
+  display: table-row;
+  
+  .table__body-cell {
+
+    &:first-child {
+      border-bottom: 0;
+
+      @include sm-up {
+        border-bottom: 1px solid #EAEAEA;
+      }
+    }
+  }
+
+  &:last-child {
+
+    .table__body-cell {
+      border-bottom: 0;
+    }
+  }
+}
+
+.table__body-cell {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px;
+  color: #132324;
+  padding: 5px 10px;
+  border-bottom: 1px solid #EAEAEA;
+
+  @include sm-up {
+    display: table-cell;
+    padding: 25px 10px;
+  }
+
+  &:nth-child(1) {
+    // width: 60%;
+  }
+
+  &:nth-child(2) {
+
+    @include sm-up {
+      width: 200px;
+    }
+  }
+}
+
+.price-cost {
+  font-family: 'Gilroy';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 20px; /* identical to box height, or 143% */
+  color: #132324;
+  padding-left: 20px;
+  position: relative;
+
+  &:before {
+    width: 7px;
+    height: 7px;
+    display: block;
+    content: '';
+
+    position: absolute;
+    top: 5px;
+    left: 0;
+    border-radius: 50px;
+
+    background-color: #1BD0E0;
+  }
+
+  span + span {
+    padding-left: 17px;
+  }
+}
+
+.cost-old {
+  color: #ACACAC;
+  text-decoration: line-through;
+}

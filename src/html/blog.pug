@@ -1,0 +1,58 @@
+extends template/main
+
+block variables
+	- var title = '';
+	- var description = '';
+	- var keywords = 'SeoWave Studio';
+	- var author = '';
+	- var pageClass = 'page-template-blog';
+
+block content
+
+	section.section-blog
+		.section-blog__header
+			.container
+				h2.section-blog__title Блог
+		.section-blog__body
+			.container
+				.blog-list
+					.blog-list__wrapper
+
+						mixin blog-unit()
+							artice.blog-unit
+								.blog-unit__wrapper
+									a.blog-unit__link(href="#")
+										.blog-unit__image
+											.blog-unit__image-bg(style="background-image: url('images/img.jpg');")
+												svg.blog-unit__placeholder(width="249" height="158" viewBox="0 0 249 158" xmlns="http://www.w3.org/2000/svg")
+													rect(x="0" y="0" width="249" height="158" rx="3" ry="3" fill="#e1e1e1")
+										.blog-unit__content
+											.blog-unit__info
+												//- .blog-unit__meta meta
+												.blog-unit__tag Article
+												//- .blog-unit__date 10.01.2020
+												.blog-unit__title Эксклюзивные аппаратные методики омоложения Guinot (Франция)
+
+						+blog-unit()
+						+blog-unit()
+						+blog-unit()
+						+blog-unit()
+						+blog-unit()
+						+blog-unit()
+
+					.blog-list__pagination
+						<nav class="navigation pagination" role="navigation">
+							<h2 class="screen-reader-text">Навигация по записям</h2>
+							<div class="nav-links">
+								<a class="prev page-numbers" href="http://wptest.ru/page/2/"><span class="screen-reader-text">Следующая страница</span><svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M11 1L2 9L11 17" stroke="#8B8B8B" stroke-width="2"/></svg></a>
+								<span class="page-numbers current"><span class="meta-nav screen-reader-text">Страница </span>1</span>
+								<a class="page-numbers" href="#"><span class="meta-nav screen-reader-text">Страница </span>2</a>
+								<span class="page-numbers dots">…</span>
+								<a class="page-numbers" href="http://wptest.ru/page/86/"><span class="meta-nav screen-reader-text">Страница </span>86</a>
+								<a class="page-numbers" href="http://wptest.ru/page/87/"><span class="meta-nav screen-reader-text">Страница </span>87</a>
+								<a class="next page-numbers" href="http://wptest.ru/page/2/"><svg width="12" height="18" viewBox="0 0 12 18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 17L10 9L0.999999 1" stroke="#8B8B8B" stroke-width="2"/></svg><span class="screen-reader-text">Следующая страница</span></a>
+							</div>
+						</nav>
+
+
+	include template/patrials/section-map

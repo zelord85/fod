@@ -1,0 +1,193 @@
+.section-compare { }
+
+.compare__inner {
+	padding-top: 55px;
+	padding-bottom: 80px;
+    position: relative;
+}
+
+.compare__title {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 45px;
+    color: #132324;
+    padding-bottom: 27px;
+    padding-left: 60px;
+    margin-bottom: 58px;
+    position: relative;
+
+    &:after {
+        width: 156px;
+        height: 2px;
+        display: block;
+        content: "";
+        background-color: #1BD0E0;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+    }
+}
+
+
+
+.compare-section-bg__grid {
+    display: flex;
+    position: absolute;
+    top: 0;
+    right: 45px;
+    width: 100%;
+    max-width: 612px;
+    height: 100%;
+    z-index: -1;
+}
+
+.compare-section-bg__column {
+    width: 25%;
+    border-right: 1px solid #F8F8F8;
+
+    &:first-child {
+        border-left: 1px solid #F8F8F8;
+    }
+}
+
+
+.compare {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+    padding: 0 20px;
+
+    @include md-up {
+        padding: 0 60px;
+    }
+}
+
+.compare-item {
+    margin-bottom: 20px;
+
+    @include sm-up {
+        width: calc(50% - 20px);
+        display: flex;
+        justify-content: center;
+        margin-bottom: 40px;
+    }
+}
+
+
+/* Images compare main container */
+.images-compare-container {
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Images compare front element */
+.images-compare-before {
+    will-change: clip;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    pointer-events: none;
+    overflow: hidden;
+}
+
+/* Images compare back element */
+.images-compare-after {
+    pointer-events: none;
+}
+
+/* Responsive image settings */
+.images-compare-before img, .images-compare-after img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* Separator (thin vertical blank line) */
+.images-compare-separator {
+    position: absolute;
+    background: white;
+    height: 100%;
+    width: 1px;
+    z-index: 4;
+    left: 0;
+    top: 0;
+}
+
+/* Drag handle (circle) */
+.images-compare-handle {
+    height: 37px;
+    width: 37px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-left: -19px;
+    margin-top: -22px;
+    border: 3px solid white;
+    -webkit-border-radius: 1000px;
+    -moz-border-radius: 1000px;
+    border-radius: 1000px;
+    -webkit-box-shadow: 0 0 12px rgba(51, 51, 51, 0.5);
+    -moz-box-shadow: 0 0 12px rgba(51, 51, 51, 0.5);
+    box-shadow: 0 0 12px rgba(51, 51, 51, 0.5);
+    z-index: 3;
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.7);
+    cursor: pointer;
+}
+
+/* Drag handle arrows */
+.images-compare-left-arrow, .images-compare-right-arrow {
+    width: 0;
+    height: 0;
+    border: 6px inset transparent;
+    position: absolute;
+    top: 50%;
+    margin-top: -6px;
+}
+
+.images-compare-left-arrow {
+    border-right: 6px solid white;
+    left: 50%;
+    margin-left: -17px;
+}
+
+.images-compare-right-arrow {
+    border-left: 6px solid white;
+    right: 50%;
+    margin-right: -17px;
+}
+
+/* Label */
+.images-compare-label {
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+    color: rgb(0, 0, 0);
+    color: rgba(0, 0, 0, 0.4);
+    background: rgb(255, 255, 255);
+    background: rgba(255, 255, 255, 0.7);
+    padding: 10px;
+    border-radius: 5px;
+    pointer-events: none;
+    display: none;
+}
+
+.images-compare-container .images-compare-label {
+    display: inherit;
+}
+
+.images-compare-before .images-compare-label {
+    left: 10px;
+}
+
+.images-compare-after .images-compare-label {
+    left: auto;
+    right: 10px;
+}

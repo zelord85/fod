@@ -1,0 +1,27 @@
+
+include ../utils/mixins
+block variables
+
+doctype html
+html(lang="en" dir="ltr")
+	head
+		include patrials/head
+	body(class=pageClass)
+		include ../layout/header
+		main.site-content(id="site-content" role="main")
+			block content
+		include ../layout/footer
+		//- .screen-rotator
+		script(src="js/libraries.min.js")
+		script(src="libraries/accordion/quickaccord.min.js")
+
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/hammer.js/2.0.8/hammer.min.js"></script>
+		<script type="text/javascript" src="libraries/jquery-images-compare/jquery.images-compare.js"></script>
+
+		//- <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script> 
+		//- <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+		//- script(src="libraries/fullPage-3.0.8/scrolloverflow.min.js")
+		//- script(src="libraries/fullPage-3.0.8/fullpage.extensions.min.js")
+		//- script(src="libraries/fullPage-3.0.8/fullpage.min.js")
+		script(src="js/script.js")
+		block scripts

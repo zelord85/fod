@@ -1,0 +1,151 @@
+.section-video {  }
+
+.video__wrapper {
+
+	@include xl-up {
+	    display: flex;
+	    flex-direction: row-reverse;
+	    justify-content: space-between;
+	}
+}
+
+.video__content {
+	position: relative;
+}
+
+.video__aside {
+	width: 100%;
+	max-width: 720px;
+	padding-top: 47px;
+	padding-bottom: 32px;
+	padding-left: 20px;
+	padding-right: 20px;
+    margin-top: 85px;
+    margin-bottom: 65px;
+  
+    z-index: 10;
+    position: relative;
+    background-color: #ffffff;
+
+
+	@include md-up {
+		padding-right: 0;
+		padding-left: 60px;
+    	margin-right: -85px;
+	}
+}
+
+.video__title {
+	font-style: normal;
+	font-weight: 900;
+	font-size: 24px;
+	line-height: 21px;
+	color: #132324;
+	margin-bottom: 45px;
+
+	.title-large {
+		display: block;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 36px;
+		line-height: 45px;
+	}
+}
+
+.video__text {
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 21px;
+	color: #132324;
+}
+
+.video__block-list {
+	margin-top: 50px;
+
+	@include xs-up {
+		display: flex;
+	}
+}
+
+.video__block-item {
+	margin-right: 5%;
+	margin-bottom: 40px;
+	
+	@include xs-up {
+		width: 30%;
+		margin-bottom: 0px;
+	}
+}
+
+.video__block-title {
+	max-width: 105px;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 14px;
+	line-height: 17px;
+	display: flex;
+	align-items: center;
+	margin-bottom: 25px;
+
+	color: #132324;
+
+	position: relative;
+
+	&:after {
+		width: 7px;
+		height: 2px;
+		display: block;
+		content: "";
+		background-color: #1BD0E0;
+		position: absolute;
+		top: -10px;
+		left: 0px;
+	}
+}
+
+.video__block-text {
+	max-width: 160px;
+	font-style: normal;
+	font-weight: 300;
+	font-size: 14px;
+	line-height: 16px;
+	color: #ABABAB;
+}
+
+.video__content {
+
+}
+
+.video__link {
+	display: block;
+
+	&:hover {
+		path {
+			fill: #132324;
+		}
+
+		circle {
+			transform: scale(0.8);
+		}
+	}
+}
+
+
+.video__link-icon {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	path,
+	circle {
+		transform-origin: center;
+		transition: all .3s;
+	}
+}
+
+.video__link-poster {
+	display: block;
+	width: 100%;
+}

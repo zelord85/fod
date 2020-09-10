@@ -1,0 +1,37 @@
+/* -------------------------------------------------------------------------- 
+ * Fonts weights :
+ * --------------------------------------------------------------------------
+ * 100: Thin (Hairline)
+ * 200: Extra Light (Ultra Light)
+ * 300: Light
+ * 400: Regular
+ * 500: Medium
+ * 600: Semi Bold
+ * 700: Bold
+ * 800: Extra Bold (Ultra Bold)
+ * 900: Black (Heavy)
+ * -------------------------------------------------------------------------- */
+
+/* Gotham Pro */
+/* -------------------------------------------------------------------------- */
+
+// Gilroy 300: Light
+@include font-face(Gilroy, Gilroy/Gilroy-Light, 300, normal, eot woff2 woff ttf svg);
+
+// Gilroy 400: Regular
+@include font-face(Gilroy, Gilroy/Gilroy-Regular, normal, normal, eot woff2 woff ttf svg);
+
+// Gilroy 500: Medium
+@include font-face(Gilroy, Gilroy/Gilroy-Medium, 500, normal, eot woff2 woff ttf svg);
+
+// Gilroy 600: Semi Bold
+// @include font-face(Roboto, Roboto/Roboto-SemiBold, 600, normal, eot woff2 woff ttf svg);
+
+// Gilroy 700: Bold
+@include font-face(Gilroy, Gilroy/Gilroy-Bold, 700, normal, eot woff2 woff ttf svg);
+
+// Gilroy 800: Extra Bold (Ultra Bold)
+// @include font-face(Roboto, Roboto/Roboto-Bold, 800, normal, eot woff2 woff ttf svg);
+
+// Gilroy 900: Black (Heavy)
+@include font-face(Gilroy, Gilroy/Gilroy-Heavy, 900, normal, eot woff2 woff ttf svg);
